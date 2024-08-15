@@ -1,1 +1,1 @@
-Welcome to my Data Science portfolio! I have experience with Python, Excel, SQL, R, and more. I enjoy learning new skills through personal exploration and my education at the University of Illinois. I look forward to sharing more projects to this repo!
+Welcome to Jack Damhorst's Data Science portfolio! I have experience with Python, Excel, SQL, R, and more. I enjoy learning new skills through my education at the University of Illinois, work projects, and personal exploration. I look forward to sharing more projects to this repo.
