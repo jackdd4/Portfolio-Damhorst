@@ -1,0 +1,62 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "name": "CDC PLACES Project Data",
+  "description": "This dataset, sourced from the CDC PLACES Project, provides local-level health data, including chronic disease indicators and health behaviors. It includes data on variables such as obesity, physical inactivity, mental health, and other health-related metrics, which can be analyzed at the state level in the United States.",
+  "creator": {
+    "@type": "Organization",
+    "name": "Centers for Disease Control and Prevention (CDC)",
+    "url": "https://www.cdc.gov/places"
+  },
+  "datePublished": "2022",
+  "distribution": {
+    "@type": "DataDownload",
+    "encodingFormat": "CSV",
+    "contentUrl": "https://github.com/YOUR_REPO/cleaned_cdc.csv"
+  },
+  "keywords": [
+    "health outcomes",
+    "obesity",
+    "mental health",
+    "public health",
+    "chronic diseases"
+  ],
+  "license": "https://www.cdc.gov/other/privacy.html",
+  "spatialCoverage": {
+    "@type": "Place",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "39.8283",
+      "longitude": "-98.5795"
+    },
+    "addressCountry": "United States"
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "stateabbr",
+      "description": "Abbreviation of the U.S. state."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Stroke among adults",
+      "description": "Percentage of adults diagnosed with stroke."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Arthritis among adults",
+      "description": "Percentage of adults diagnosed with arthritis."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Obesity among adults",
+      "description": "Percentage of adults classified as obese."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Depression among adults",
+      "description": "Percentage of adults diagnosed with depression."
+    }
+  ],
+  "citation": "Centers for Disease Control and Prevention, PLACES Project 2022"
+}

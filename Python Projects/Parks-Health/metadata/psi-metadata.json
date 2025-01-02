@@ -1,0 +1,92 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "name": "Trust for Public Land ParkScore® Index Data",
+  "description": "This dataset, sourced from the Trust for Public Land ParkScore® Index, provides detailed information on public parks in cities across the United States. It includes variables such as park acreage, investment, accessibility, amenities, and equity. These data points are crucial for understanding the relationship between park access and community health indicators.",
+  "creator": {
+    "@type": "Organization",
+    "name": "Trust for Public Land",
+    "url": "https://www.tpl.org/parkscore"
+  },
+  "datePublished": "2022",
+  "distribution": {
+    "@type": "DataDownload",
+    "encodingFormat": "CSV",
+    "contentUrl": "https://github.com/YOUR_REPO/cleaned_psi.csv"
+  },
+  "keywords": [
+    "parks",
+    "public spaces",
+    "health outcomes",
+    "equity",
+    "community"
+  ],
+  "license": "https://www.tpl.org/terms-of-use",
+  "spatialCoverage": {
+    "@type": "Place",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "39.8283",
+      "longitude": "-98.5795"
+    },
+    "addressCountry": "United States"
+  },
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "stateabbr",
+      "description": "Abbreviation of the U.S. state."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Rank",
+      "description": "The overall rank of the city/state based on park metrics."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "MedianParkSizePoints",
+      "description": "Points assigned based on the median size of parks in the city/state."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "ParklandPoints",
+      "description": "Points assigned based on the percentage of land area dedicated to parks."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "AcreagePoints",
+      "description": "Points assigned based on the total acreage of parkland."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "10MinWalkPoints",
+      "description": "Points for the percentage of residents within a 10-minute walk to a park."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "POC10MinWalkPoints",
+      "description": "Points for people of color within a 10-minute walk to a park."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "LowIncome10MinWalkPoints",
+      "description": "Points for low-income individuals within a 10-minute walk to a park."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "POCParkSpacePoints",
+      "description": "Points assigned for the equity of park space allocation for people of color."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "EquityPoints",
+      "description": "Overall points assigned for equity in park access."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "SpendingPoints",
+      "description": "Points for park-related spending per resident."
+    }
+  ],
+  "citation": "Trust for Public Land, ParkScore® Index 2022"
+}

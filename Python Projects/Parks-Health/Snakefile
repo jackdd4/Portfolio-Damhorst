@@ -1,0 +1,39 @@
+rule collect_data:
+    input:
+        "data/2022_ParkScoreRank.csv"
+    output:
+        "data/psi.csv",
+        "data/cdc.csv"
+    shell:
+        "python scripts/data_acquisition.py"
+
+rule clean_data:
+    input:
+        "data/cdc.csv",
+        "data/psi.csv"
+    output:
+        "data/cleaned_cdc.csv",
+        "data/cleaned_psi.csv"
+    shell:
+        "python scripts/data_cleaning.py"
+
+rule integrate_data:
+    input:
+        "data/cleaned_cdc.csv",
+        "data/cleaned_psi.csv"
+    output:
+        "data/integrated.csv"
+    shell:
+        "python scripts/data_integration.py"
+
+rule analyze_data:
+    input:
+        "data/integrated.csv"
+    output:
+        "results/obesity_vs_park_score.png" 
+    shell:
+        "python scripts/data_analysis.py"
+
+rule all:
+    input:
+        "results/obesity_vs_park_score.png"

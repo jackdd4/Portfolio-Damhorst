@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resource xmlns="http://datacite.org/schema/kernel-4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.3/metadata.xsd">
+  <identifier identifierType="DOI">10.5072/zenodo.142299</identifier>
+  <alternateIdentifiers>
+    <alternateIdentifier alternateIdentifierType="URL">https://sandbox.zenodo.org/records/142299</alternateIdentifier>
+    <alternateIdentifier alternateIdentifierType="oai">oai:zenodo.org:142299</alternateIdentifier>
+  </alternateIdentifiers>
+  <creators>
+    <creator>
+      <creatorName nameType="Personal">Jack Damhorst</creatorName>
+      <familyName>Jack Damhorst</familyName>
+      <nameIdentifier nameIdentifierScheme="ORCID">0009-0001-9113-9272</nameIdentifier>
+    </creator>
+  </creators>
+  <titles>
+    <title>IS 477 Final Project - Parks and Cities</title>
+  </titles>
+  <publisher>Zenodo</publisher>
+  <publicationYear>2024</publicationYear>
+  <dates>
+    <date dateType="Issued">2024-12-13</date>
+    <date dateType="Submitted">2023-12-13</date>
+    <date dateType="Updated">2024-12-13</date>
+  </dates>
+  <resourceType resourceTypeGeneral="Software"></resourceType>
+  <relatedIdentifiers>
+    <relatedIdentifier relatedIdentifierType="URL" relationType="IsSupplementTo" resourceTypeGeneral="Software">https://github.com/illinois-data-curation/is477-fa24-parks-cities</relatedIdentifier>
+    <relatedIdentifier relatedIdentifierType="DOI" relationType="IsVersionOf">10.5072/zenodo.142298</relatedIdentifier>
+  </relatedIdentifiers>
+  <rightsList>
+    <rights rightsURI="https://opensource.org/licenses/MIT" rightsIdentifierScheme="spdx" rightsIdentifier="mit">MIT License</rights>
+  </rightsList>
+  <descriptions>
+    <description descriptionType="Abstract">Parks and Cities research project for IS 477</description>
+  </descriptions>
+</resource>
