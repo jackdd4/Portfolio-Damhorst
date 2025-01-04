@@ -3,9 +3,6 @@
 ## Link to Archival Record
 [DOI: 10.5072/zenodo.142299](https://sandbox.zenodo.org/records/142299)
 
-## Contributors:
-Jack Damhorst, Ulyses Granados, Tarun Bathini
-
 ## Summary
 
   In this project, our goal was to understand the relationship between public parks and public health.  We hoped to gain insights into the role parks play in enhancing public health in large cities across our nation. Furthermore, this research may inform urban planning and policy decisions aimed at promoting healthier, more resilient communities. Understanding the impact of green spaces could help identify opportunities for investment in public health through environmental design, ensuring cities prioritize green spaces to benefit all residents. 
