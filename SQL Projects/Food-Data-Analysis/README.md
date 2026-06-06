@@ -8,7 +8,7 @@ Right now, the current version of the dashboard (`FoodDataDashboard.png`) is fun
 ## 🛠️ What's wrong with the current dashboard?
 Looking closely at the staging version (`FoodDataDashboard.png`), a few major things need to be fixed to make it readable at a glance:
 
-* **Text and Layout Formatting:** Important numbers like `Total Revenue` are getting clipped off at the very top of the screen, and some of the chart titles are overlapping the data points. 
+* **Text and Layout Formatting:** The top KPI cards (like Total Revenue) and chart titles feel crowded at the margins. The layout needs more breathing room and intentional padding to separate the high-level metrics from the underlying visualizations.
 * **Bad Chart Selection:** The top-right visual uses a statistical Box Plot to show sales by city. While box plots are great for advanced stats, they are confusing for standard reporting. A stakeholder shouldn't have to guess at quartiles just to see which city sold the most.
 * **Visual Overload:** The center stacked bar chart breaks categories down by individual product names. Because there are so many products, it creates a dozen tiny color slices that are impossible to compare visually.
 * **Zero Breathing Room:** The bottom-right corner is incredibly crowded. The treemap, pie chart, and legends are all squished together, causing text to clip and burying the regional breakdown.
