@@ -1,29 +1,31 @@
-# Food Data Analysis & Dashboard Redesign
+# Fixing a Cluttered Food Sales Dashboard
 
-## 📌 Project Overview
-This data analytics project focuses on extracting, cleaning, and aggregating food industry sales datasets using SQL, paired with a comprehensive UI/UX overhaul of an executive reporting dashboard. The core objective of this project is to transform a cluttered, complex legacy dashboard into a clean, intuitive, and actionable decision-making tool for stakeholders.
+## 📌 What is this project?
+This repository contains a SQL backend and the initial design stage of a dashboard tracking food industry sales data. 
 
-## 🛠️ The Challenge: Identifying Dashboard Inefficiencies
-An analysis of the initial staging dashboard (`FoodDataDashboard.png`) revealed several critical layout, formatting, and data visualization flaws that increase cognitive load and limit business value:
+Right now, the current version of the dashboard (`FoodDataDashboard.png`) is functional, but it's tough to read and doesn't tell a clean story. I am using this project to document my process as I rewrite the underlying SQL queries and completely clean up the frontend layout to make it user-friendly for business stakeholders.
 
-* **Information Clutter & Text Overlap:** High-level executive KPIs (like Total Revenue) are clipped at the top margin, while chart titles overlap data points, reducing professional polish.
-* **Ineffective Chart Selection:** The use of a statistical Box Plot for city sales distribution adds unnecessary complexity for general business stakeholders who simply need quick performance rankings.
-* **Visual Overload:** The stacked category bar chart relies on too many granular color slices (individual products), making it nearly impossible to quickly compare product-level performance.
-* **Compressed Real Estate:** The bottom-right visual elements (Treemap, Pie Chart, and Legends) are crammed together, causing text collisions and burying regional performance data.
+## 🛠️ What's wrong with the current dashboard?
+Looking closely at the staging version (`FoodDataDashboard.png`), a few major things need to be fixed to make it readable at a glance:
 
-## 🚀 Planned Improvements & UX Design Solutions
-To resolve these pain points, the ongoing redesign focuses on data storytelling best practices and dashboard UI/UX frameworks:
+* **Text and Layout Formatting:** Important numbers like `Total Revenue` are getting clipped off at the very top of the screen, and some of the chart titles are overlapping the data points. 
+* **Bad Chart Selection:** The top-right visual uses a statistical Box Plot to show sales by city. While box plots are great for advanced stats, they are confusing for standard reporting. A stakeholder shouldn't have to guess at quartiles just to see which city sold the most.
+* **Visual Overload:** The center stacked bar chart breaks categories down by individual product names. Because there are so many products, it creates a dozen tiny color slices that are impossible to compare visually.
+* **Zero Breathing Room:** The bottom-right corner is incredibly crowded. The treemap, pie chart, and legends are all squished together, causing text to clip and burying the regional breakdown.
 
-* **Establishing Visual Hierarchy:** Relocating core business KPIs (`Total Revenue` and `Total Units Sold`) into dedicated, well-padded cards at the top left to ground the viewer instantly.
-* **Simplifying Chart Choices:** Replacing the statistical box plot with a sorted **Horizontal Bar Chart** for city sales to provide an instant performance leaderboard.
-* **Streamlining Complex Visuals:** Grouping long-tail product variants into a "Top 10" view or clean category bars, eliminating the hard-to-read multicolor slices.
-* **Optimizing Whitespace & Real Estate:** Separating the crowded bottom-right charts, expanding the canvas padding, and adding explicit percentage labels to regional breakdowns so the data can "breathe."
-* **Query Optimization:** Refining the underlying data aggregation layers in SQL to ensure the redesigned dashboard loads efficiently.
+## 🚀 The Fixes I'm Working On
+I am actively overhauling the reporting structure to focus on clarity and clean design:
 
-## 🧰 Tools & Tech Stack
-* **SQL:** Data extraction, cleaning, and engineering (see `fooddata.sql`).
-* **Data Visualization / BI:** Used for dashboard UI/UX layout and visual reporting.
+* **Clean KPI Cards:** Moving `Total Revenue` and `Total Units Sold` into their own dedicated, well-padded boxes at the top left so they are the first thing you see.
+* **Ditching the Box Plot:** Swapping the city box plot out for a simple, sorted **Horizontal Bar Chart** so city performance reads like a clear leaderboard.
+* **Streamlining the Products:** Grouping the long list of specific products into a clean "Top 10" view so the charts aren't a rainbow of tiny slices.
+* **Adding Whitespace:** Giving the bottom-right charts room to breathe, separating the visuals, and adding explicit percentage labels to the regional data.
+* **SQL Cleanup:** Tweaking the aggregation layers in `fooddata.sql` so the dashboard loads instantly without lagging.
 
-## 📂 Repository Contents
-* `fooddata.sql` - Core SQL queries used for data preparation and aggregation.
-* `FoodDataDashboard.png` - Visual interface mockup highlighting the current state and areas flagged for design optimization.
+## 🧰 Tools Used
+* **SQL:** Data cleaning and extraction (code is in `fooddata.sql`).
+* **BI / Visualization:** [Specify your tool here, e.g., Power BI / Tableau / Excel] for the dashboard layout.
+
+## 📂 Files in this Folder
+* `fooddata.sql` - The queries used to pull and aggregate the data.
+* `FoodDataDashboard.png` - The original, messy dashboard staging view I am currently redesigning.
