@@ -16,5 +16,6 @@ This directory contains a collection of Python-based data science projects. Thes
 
 *   **[Credit Approval ML](./Credit-Approval-ML/)** — Predictive modeling to automate credit card approval decisions based on financial features.
 *   **[Amazon RNN Sentiment Analysis](./RNN-SentimentAnalysis-AMZN/)** — Deep learning model utilizing Recurrent Neural Networks to predict customer sentiment from raw review text.
+*   **[Parks Health Analysis](./Parks-Health/)** — Data analysis and visualization exploring the relationship between public park access and community health indicators.
 *   **[Bird Migration Visualization](./Bird-Migration-Visualization/)** — Geospatial data visualization tracking migration patterns.
 *   **[Video Game Market Analysis](./VideoGame-DataAnalysis/)** — End-to-end exploratory data analysis and machine learning pipeline predicting video game sales success.
