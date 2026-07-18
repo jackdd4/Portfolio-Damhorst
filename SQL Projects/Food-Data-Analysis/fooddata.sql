@@ -25,7 +25,7 @@ FROM fooddata
 GROUP BY City
 ORDER BY TotalSales DESC;
 
--- Q3: What products are pruchased the most per city?
+-- Q3: What products are purchased the most per city?
 
 SELECT City, Category, Product, SUM(TotalPurchases) AS TotalSales
 FROM (
